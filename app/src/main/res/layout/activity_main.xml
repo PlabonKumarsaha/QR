@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Value" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/Generatebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate" />
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/Scanbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan" />
+</LinearLayout>
