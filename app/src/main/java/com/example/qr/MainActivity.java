@@ -35,21 +35,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String data = editText.getText().toString();
+                if (data.isEmpty()) {
+                    editText.setError("Value required!");
+                } else {
 
-                //QRGEncoder
-                // Initializing the QR Encoder with your value to be encoded, type you required and Dimension
-                QRGEncoder qrgEncoder = new QRGEncoder(data, null, QRGContents.Type.TEXT, 10);
+                    //QRGEncoder
+                    // Initializing the QR Encoder with your value to be encoded, type you required and Dimension
+                    QRGEncoder qrgEncoder = new QRGEncoder(data, null, QRGContents.Type.TEXT, 200);
 
-                try {
-                    // Getting QR-Code as Bitmap
-                    Bitmap qrbits = qrgEncoder.getBitmap();
-                    // Setting Bitmap to ImageView
-                   // qrImage.setImageBitmap(bitmap);
-                } catch (Exception e) {
-                    e.printStackTrace();
+                    try {
+                        // Getting QR-Code as Bitmap
+                        Bitmap qrbits = qrgEncoder.getBitmap();
+                        // Setting Bitmap to ImageView
+                        imageView.setImageBitmap(qrbits);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
+
+
 
     }
 }
