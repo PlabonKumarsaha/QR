@@ -2,8 +2,21 @@
 
 Basic QR scanner application that generates and scans QR codes..
 
+## Task 
+```
+Take Input and generate a QR code
+```
+```
+Can scan a QR and show output
+```
 
-Scan library :https://github.com/androidmads/QRGenerator
+## Library Used
+
+* [Scan library](https://github.com/androidmads/QRGenerator) -QR scan library
+* [Dexter Library](https://github.com/Karumi/Dexter) - Dexter is an Android library that simplifies the process of requesting permissions(in this project :Camera) at runtime.
+
+## Tools
+* [Android studio](https://developer.android.com/) - Android sudio
 
 
-We used Dexter Library to get real time user eprmition for camera : https://github.com/Karumi/Dexter
+
